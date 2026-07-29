@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fatimah Bafadhl | Portfolio (flat view)</title>
+  <link rel="icon" type="image/png" href="assets/images/FB-fav.png" />
+  <meta name="description" content="A flat, scrollable view of the same four-project gallery, for anyone who'd rather not (or can't) walk through the 3D version." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/flat.css" />
+</head>
+<body>
+
+  <div class="placard-bar">
+    <span class="placard-bar__name">Fatimah Bafadhl</span>
+   
+    <nav class="wing-nav" aria-label="Jump to a project">
+      <a href="#reesha">Reesha</a>
+      <a href="#website">Start Your Journey</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#app">Pocket Habit Chef</a>
+      
+    </nav>
+  </div>
+
+  <!-- ============ HERO: the walkthrough leads ============ -->
+  <section class="hero">
+    <p class="eyebrow">Portfolio · flat view</p>
+    <h1 class="hero__title">The same gallery, laid flat</h1>
+    <p class="hero__sub">
+    Welcome! My portfolio is a 3D gallery at heart, but I've laid it all out flat here just in case your device 
+    or browser prefers it this way. You'll find all the same project walkthroughs, 
+    screenshots, and demo videos right here without needing WebGL.
+    </p>
+
+    <div class="hero-frame">
+      <video controls preload="metadata" poster="assets/images/me-frame.png">
+        <source src="assets/videos/gallery-walkthrough.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-frame__caption">
+        <span>A walkthrough of the 3D corridor, recorded so you can see it either way</span>
+        <a class="btn btn--ghost" href="index.html">Walk through it yourself →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REESHA (hero project) ============ -->
+  <section class="project" id="reesha">
+    <div class="project__inner">
+      <div class="project__head">
+        <p class="plaque__eyebrow">01 · Graduation project</p>
+        <h2 class="project__title">Reesha</h2>
+        <p class="project__tagline">
+          Reesha is a mobile application designed to support local artists by providing a dedicated platform
+          to showcase and sell their artwork. The project was inspired by the challenge many emerging artists
+          face in gaining visibility on general-purpose social media and commercial marketplaces. By connecting
+          artists with art enthusiasts in a focused environment, Reesha aims to make discovering, purchasing,
+          and requesting custom artwork more accessible while encouraging the growth of the local creative community.
+        </p>
+      </div>
+
+      <div class="project__video">
+        <div class="video-frame">
+          <video controls preload="metadata" poster="assets/images/reesha-frame.jpg">
+            <source src="assets/videos/reesha-demo.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+
+      <div class="project__columns">
+        <div class="project__details">
+          <div class="meta">
+            <div class="meta-item">
+              <span class="label">Role</span>
+              <span class="value">Team Leader • React Native Developer (Team of 6)</span>
+            </div>
+            <div class="meta-item">
+              <span class="label">Stack</span>
+              <span class="value mono">React Native · Expo · Firebase · Git/GitHub</span>
+            </div>
+          </div>
+
+          <div class="project__body">
+            <p>
+              Developed as my senior graduation project, Reesha demonstrates my ability to contribute to the
+              complete software development process from planning and UI implementation to backend integration,
+              testing, and team collaboration. The application was built using React Native and Firebase, with a
+              strong emphasis on usability, scalability, and an intuitive user experience.
+            </p>
+            <p>
+              I led a six-person team through the full project lifecycle breaking down tasks, reviewing each
+              member's work, and making final calls on direction. I managed our Git/GitHub workflow, resolving
+              merge conflicts before integrating new features into the shared codebase. Alongside my leadership
+              responsibilities, I played an active technical role by transforming the approved UI designs into
+              React Native interfaces, integrating them with Firebase services, and collaborating on implementation
+              and testing to deliver a functional and user-friendly application.
+            </p>
+          </div>
+
+          <p class="section-label">Challenges</p>
+          <div class="challenge">
+            <h3>Managing Git conflicts across a 6-person team</h3>
+            <p>With six of us in the same codebase, conflicts came up often. I had everyone work on their own branch instead of pushing straight to main, reviewed every branch before merging, and resolved conflicts manually so we always had one stable, working version.</p>
+          </div>
+          <div class="challenge">
+            <h3>Speeding up slow-loading screens</h3>
+            <p>Some screens were slow because our code fetched Firebase data one collection at a time, in sequence. I restructured those calls to run in parallel instead, which significantly improved screen responsiveness.</p>
+          </div>
+        </div>
+
+        <div class="project__shots">
+          <p class="section-label">Screenshots</p>
+          <div class="carousel" data-lightbox-group="reesha">
+            <button class="carousel-item"><img src="assets/images/reesha-intro.jpg" alt="Reesha screenshot 1" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/reesha-rej.jpg" alt="Reesha screenshot 2" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/reesha-hom.jpg" alt="Reesha screenshot 3" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/reesha-fav.jpg" alt="Reesha screenshot 4" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/reesha4.jpg" alt="Reesha screenshot 5" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/reesha-lang.jpg" alt="Reesha screenshot 6" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/reesha6.jpg" alt="Reesha screenshot 7" loading="lazy" /></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ START YOUR JOURNEY ============ -->
+  <section class="project" id="website">
+    <div class="project__inner">
+      <div class="project__head">
+        <p class="plaque__eyebrow">02 · Team project</p>
+        <h2 class="project__title">Start Your Journey (ابدأ رحلتك)</h2>
+        <p class="project__tagline">
+          An Arabic-language educational platform that helps prospective students explore Saudi universities,
+          find their ideal major through a short quiz, read student reviews, and calculate their weighted
+          admission score.
+        </p>
+      </div>
+
+      <div class="project__video">
+        <div class="video-frame">
+          <video controls preload="metadata" poster="assets/images/website-frame.png">
+            <source src="assets/videos/website-demo.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+
+      <div class="project__columns">
+        <div class="project__details">
+          <div class="meta">
+            <div class="meta-item">
+              <span class="label">Role</span>
+              <span class="value">Front-End Developer &amp; Back-End (team of 3)</span>
+            </div>
+            <div class="meta-item">
+              <span class="label">Stack</span>
+              <span class="value mono">HTML · CSS · JavaScript · PHP · MySQL</span>
+            </div>
+          </div>
+
+          <div class="project__body">
+            <p>
+              Across six pages, I built the site's front-end layout in HTML and designed the back-end architecture
+              in PHP and MySQL, including the two-table database (universities and reviews) behind it. I focused
+              on implementing the student review feature, allowing visitors to submit reviews and see newly added
+              feedback appear instantly without refreshing the page.
+            </p>
+          </div>
+
+          <p class="section-label">Challenges</p>
+          <div class="challenge">
+            <h3>Submitting and refreshing reviews without a page reload</h3>
+            <p>I built lightweight PHP endpoints (submit_review.php and get_reviews.php) that insert and read from the reviews table and return JSON, then called it from the front end with XMLHttpRequest so a new review shows up in the list right after it's submitted, instead of the visitor waiting for a full page refresh.</p>
+          </div>
+          <div class="challenge">
+            <h3>Keeping university data editable instead of hard-coded</h3>
+            <p>Rather than hardcoding each university's details directly into the HTML, I pulled them from a MySQL table through PHP, so adding or updating a university only means changing a database row, not editing every page that lists it.</p>
+          </div>
+        </div>
+
+        <div class="project__shots">
+          <p class="section-label">Screenshots</p>
+          <div class="carousel" data-lightbox-group="website">
+            <button class="carousel-item"><img src="assets/images/website1.png" alt="Start Your Journey screenshot 1" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/website2.png" alt="Start Your Journey screenshot 2" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/website3.png" alt="Start Your Journey screenshot 3" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/website4.png" alt="Start Your Journey screenshot 4" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/website5.png" alt="Start Your Journey screenshot 5" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/website6.png" alt="Start Your Journey screenshot 6" loading="lazy" /></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DASHBOARD ============ -->
+  <section class="project project--data" id="dashboard">
+    <div class="project__inner">
+      <div class="project__head">
+        <p class="plaque__eyebrow">03 · Team project</p>
+        <h2 class="project__title">Electronic Real Estate Auctions | Decision Support Dashboard</h2>
+        <p class="project__tagline">
+          A data analysis and Power BI dashboard examining what drives revenue in Saudi electronic real estate
+          auctions (Q1 2025), built to help an auction director forecast performance and allocate resources.
+        </p>
+      </div>
+
+      <div class="project__video">
+        <div class="video-frame">
+          <video controls preload="metadata" poster="assets/images/dashboard4.png">
+            <source src="assets/videos/dashboard-demo.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+
+      <div class="project__columns">
+        <div class="project__details">
+          <div class="meta">
+            <div class="meta-item">
+              <span class="label">Role</span>
+              <span class="value">Data Analyst · Data Cleaning, Descriptive Statistics &amp; Dashboard Design (team of 4)</span>
+            </div>
+            <div class="meta-item">
+              <span class="label">Stack</span>
+              <span class="value mono">Excel · Power BI</span>
+            </div>
+          </div>
+
+          <div class="project__body">
+            <p>
+              Using a public Saudi Open Data dataset, I cleaned and validated the data in Excel by checking for
+              missing values, duplicates, and outliers before performing descriptive statistical analysis. I then
+              designed the interactive Power BI dashboard on top of that: KPI cards, a top-cities breakdown, and a
+              slicer so the director can filter by region and test "what-if" changes in asset volume.
+            </p>
+          </div>
+
+          <p class="section-label">Challenges</p>
+          <div class="challenge">
+            <h3>Deciding what to do with a 459M SAR outlier</h3>
+            <p>One auction's total sale value sat far above every other record. Rather than deleting it, I checked it against the IQR fence to confirm it was a genuine high-value auction, not a data-entry error, and kept it in the dataset so the analysis accurately reflected real market conditions rather than an artificially filtered dataset.</p>
+          </div>
+        </div>
+
+        <div class="project__shots">
+          <p class="section-label">Screenshots</p>
+          <div class="carousel" data-lightbox-group="dashboard">
+            <button class="carousel-item"><img src="assets/images/dashboard1.png" alt="Dashboard screenshot 1" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/dashboard2.png" alt="Dashboard screenshot 2" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/dashboard3.png" alt="Dashboard screenshot 3" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/dashboard4.png" alt="Dashboard screenshot 4" loading="lazy" /></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POCKET HABIT CHEF ============ -->
+  <section class="project" id="app">
+    <div class="project__inner">
+      <div class="project__head">
+        <p class="plaque__eyebrow">04 · Team project</p>
+        <h2 class="project__title">Pocket Habit Chef</h2>
+        <p class="project__tagline">
+          A recipe-finder Android app that turns whatever's left in the fridge into meal ideas, helping users
+          reduce food waste with saved favorites, shareable recipe cards, and a running search history.
+        </p>
+      </div>
+
+      <div class="project__video">
+        <div class="video-frame">
+          <video controls preload="metadata" poster="assets/images/app-frame12.png">
+            <source src="assets/videos/app-demo.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+
+      <div class="project__columns">
+        <div class="project__details">
+          <div class="meta">
+            <div class="meta-item">
+              <span class="label">Role</span>
+              <span class="value">UI Design &amp; QA Testing (team of 3)</span>
+            </div>
+            <div class="meta-item">
+              <span class="label">Stack</span>
+              <span class="value mono">Java · Android Studio · SQLite</span>
+            </div>
+          </div>
+
+          <div class="project__body">
+            <p>
+              Pocket Habit Chef lets someone type in a few leftover ingredients and matches them against a local
+              SQLite database of recipes pulled from TheMealDB, splitting each result into what you already have
+              and what you still need. I was responsible for designing the user interface and evaluating the
+              application's usability across the complete user journey from entering ingredients to browsing
+              recipe matches, viewing details, saving favorites, and sharing recipes. Alongside the UI work, I
+              performed end-to-end testing across all four screens, identifying navigation issues and verifying
+              that each feature worked as intended before the final submission.
+            </p>
+          </div>
+
+          <p class="section-label">Challenges</p>
+          <div class="challenge">
+            <h3>Catching navigation dead-ends before submission</h3>
+            <p>With recipe data passed between four activities (search → results → details → saved), it was easy for a broken intent extra or a missing back path to strand someone mid-flow. I manually tested every navigation path search, view details, save, share, revisit saved and flagged the couple of spots where a screen was showing a blank value instead of the recipe it should have had.</p>
+          </div>
+          <div class="challenge">
+            <h3>Making "what matched" obvious at a glance</h3>
+            <p>The results screen needed to show which of a recipe's ingredients matched what someone typed versus what they'd still need to buy. I pushed for splitting that into two lines per card matched ingredients in one color, the rest in grey so a good match is obvious without reading the full list.</p>
+          </div>
+        </div>
+
+        <div class="project__shots">
+          <p class="section-label">Screenshots</p>
+          <div class="carousel" data-lightbox-group="app">
+            <button class="carousel-item"><img src="assets/images/app1-main.jpg" alt="Pocket Habit Chef screenshot 1" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/app2-list.jpg" alt="Pocket Habit Chef screenshot 2" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/app3-detailes.jpg" alt="Pocket Habit Chef screenshot 3" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/app4-results.jpg" alt="Pocket Habit Chef screenshot 4" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/app5-sheard.jpg" alt="Pocket Habit Chef screenshot 5" loading="lazy" /></button>
+            <button class="carousel-item"><img src="assets/images/app6-saved.jpg" alt="Pocket Habit Chef screenshot 6" loading="lazy" /></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MORE WORK ============ -->
+
+  <footer>
+    <p>Fatimah Bafadhl · Portfolio</p>
+    <a class="btn btn--ghost" href="index.html">← Back to the 3D gallery</a>
+  </footer>
+
+  <!-- ============ SCREENSHOT LIGHTBOX ============ -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Close image">×</button>
+    <button id="lightbox-prev" class="lightbox-nav lightbox-nav--prev" aria-label="Previous screenshot">‹</button>
+    <img id="lightbox-img" class="lightbox-img" alt="" />
+    <button id="lightbox-next" class="lightbox-nav lightbox-nav--next" aria-label="Next screenshot">›</button>
+  </div>
+
+  <script src="js/flat.js"></script>
+</body>
+</html>

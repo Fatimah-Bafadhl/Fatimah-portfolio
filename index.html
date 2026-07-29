@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fatimah Bafadhl | Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/images/FB-fav.png" />
+  <meta name="description" content="Walk through a small gallery of four projects, starting with Reesha." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============ INTRO ============ -->
+  <section id="intro">
+    <div class="intro__bg" aria-hidden="true"></div>
+    <header class="portfolio-bar">
+  
+  <nav class="portfolio-bar__links">
+  <a href="YOUR_GITHUB_URL_HERE" target="_blank" rel="noopener" class="portfolio-bar__link">GitHub</a>
+  <a href="assets/cv/Fatimah-Bafadhl-CV.pdf" download class="portfolio-bar__link">Download CV</a>
+  </nav>
+  <a href="flat.html" class="portfolio-bar__link">Prefer a flat view? →</a>
+
+
+</header>
+  
+    <div class="intro__inner">
+      <p class="eyebrow">Portfolio</p>
+      <h1 class="intro__name">Fatimah Bafadhl</h1>
+      <p class="intro__bio">
+        I'm an Information Technology graduate who enjoys building practical digital solutions and exploring different areas of technology. Throughout my academic journey, I've worked on projects in mobile and web development, data analysis, and UI implementation, which helped me strengthen my technical and problem-solving skills.
+
+I'm naturally curious and enjoy learning new technologies and ways of working. This portfolio showcases selected projects, walk in and look at a piece to see
+        what's behind it.
+      </p>
+      <button id="enter-btn" class="enter-btn">Enter the gallery</button>
+      <p class="intro__note">Best viewed with sound off · works with mouse, keyboard, or touch</p>
+    </div>
+  </section>
+
+  <!-- ============ 3D GALLERY ============ -->
+  <div id="gallery" aria-hidden="true">
+    <canvas id="gallery-canvas"></canvas>
+
+    <p id="hint" class="hint">Drag to look around · WASD to walk · click a frame for details</p>
+    <button id="exit-btn" class="exit-btn" aria-label="Back to intro">← back</button>
+
+    <!-- On-screen movement pad, shown on touch devices only -->
+    <div id="touch-pad" class="touch-pad" aria-hidden="true">
+      <button data-dir="forward" aria-label="Move forward">▲</button>
+      <div class="touch-pad__row">
+        <button data-dir="left" aria-label="Move left">◀</button>
+        <button data-dir="back" aria-label="Move backward">▼</button>
+        <button data-dir="right" aria-label="Move right">▶</button>
+      </div>
+    </div>
+
+    <!-- Visually-hidden, keyboard-focusable list so every project is reachable
+         without relying on 3D navigation -->
+    <nav class="sr-nav" aria-label="Jump to a project">
+      <p class="sr-only">Projects in this gallery</p>
+      <ul id="sr-project-list"></ul>
+    </nav>
+  </div>
+
+  <!-- ============ DETAIL PANEL ============ -->
+  <aside id="detail-panel" class="detail-panel" aria-hidden="true" aria-labelledby="detail-heading">
+    <button id="close-detail" class="close-detail" aria-label="Close project details">×</button>
+    <div id="detail-content" class="detail-content"></div>
+  </aside>
+  <div id="panel-scrim" class="panel-scrim"></div>
+
+  <!-- ============ SCREENSHOT LIGHTBOX ============ -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Close image">×</button>
+    <button id="lightbox-prev" class="lightbox-nav lightbox-nav--prev" aria-label="Previous screenshot">‹</button>
+    <img id="lightbox-img" class="lightbox-img" alt="" />
+    <video id="lightbox-video" class="lightbox-video" controls playsinline></video>
+    <button id="lightbox-next" class="lightbox-nav lightbox-nav--next" aria-label="Next screenshot">›</button>
+  </div>
+
+  <div id="webgl-fallback" class="webgl-fallback" hidden>
+    <p>Your browser doesn't support WebGL, so the 3D gallery can't run here.
+       Try a recent version of Chrome, Firefox, or Safari.</p>
+        <a href="flat.html" class="btn-fallback">View the flat version instead →</a>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
